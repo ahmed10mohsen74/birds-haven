@@ -36,7 +36,7 @@ const ScrollAnimation = () => {
         يأتي من اليسار
       </div>
       <div className="hidden from-bottom" ref={(el) => elementsRef.current.push(el)}>
-        يأتي من الأسفل
+      from under  يأتي من الأسفل
       </div>
     </div>
   );
