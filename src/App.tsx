@@ -1,12 +1,12 @@
 import './App.css'
-import Ahmed from './components/cards/card';
+import NameSwitcher from './components/cards/card';
 
 function App() {
   
 
   return (
     <>
-      <Ahmed />
+      <NameSwitcher />
       <h1>helllllllooooo  </h1>
     </>
   )
