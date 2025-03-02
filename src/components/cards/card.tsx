@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
-const NameSwitcher: React.FC = () => {
-  const [name, setName] = useState<string>("أحمد");
+const NameSwitcher = () => {
+  const [name, setName] = useState("أحمد");
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -14,4 +14,5 @@ const NameSwitcher: React.FC = () => {
   return <h1>{name}</h1>;
 };
 
+// eslint-disable-next-line no-irregular-whitespace
 export default NameSwitcher;
