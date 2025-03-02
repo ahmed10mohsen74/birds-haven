@@ -1,14 +1,13 @@
 import './App.css'
-import Nav from './components/navbar/nav'
-import ScrollAnimation from './components/animate/animate'
+
 
 function App() {
   
 
   return (
     <>
-      <Nav />
-      <ScrollAnimation/>
+      
+      <h1>helllllllooooo  </h1>
     </>
   )
 }
