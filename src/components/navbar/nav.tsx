@@ -1,34 +1,33 @@
-import "./nav.css";
-const Navbar = () => {
-  return (
-    <div className="content bg-gray-900">
-      <nav className="nav flex justify-between items-center py-4 px-6  text-white shadow-md">
-        {/* Logo */}
-        <div className="logo text-3xl font-bold">
-          <h1>Logo</h1>
-        </div>
+import './nav.css'
 
-        {/* Navigation List */}
-        <div className="list">
-          <ul className="flex gap-6 text-lg font-medium">
-            <li className="hover:text-gray-400 cursor-pointer duration-200	duration-200">
-              Home
-            </li>
-            <li className="hover:text-gray-400 cursor-pointer duration-200">
-              About
-            </li>
-            <li className="hover:text-gray-400 cursor-pointer duration-200">
-              Services
-            </li>
-            <li className="hover:text-gray-400 cursor-pointer duration-200">
-              Pages
-            </li>
-            <li className="hover:text-gray-400 cursor-pointer duration-200">
-              Projects
-            </li>
+type NavbarProps = {
+  activePage: string; // الصفحة النشطة
+  setActivePage: (page: string) => void; // دالة لتغيير الصفحة
+};
+
+const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
+  return (
+    <div className="bg-gray-800">
+     
+        <nav className=" nav flex justify-between p-4  text-white">
+          <div className="text-2xl font-bold">Logo</div>
+          <ul className="flex space-x-4">
+            {["home", "about", "services", "pages", "projects"].map((item) => (
+              <li
+                key={item}
+                onClick={() => setActivePage(item)} // تحديث الصفحة عند النقر
+                className={`cursor-pointer capitalize ${
+                  activePage === item
+                    ? "text-yellow-400 font-bold"
+                    : "text-white"
+                }`}
+              >
+                {item}
+              </li>
+            ))}
           </ul>
-        </div>
-      </nav>
+        </nav>
+      
     </div>
   );
 };
