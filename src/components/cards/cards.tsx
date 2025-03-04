@@ -144,11 +144,11 @@ const Cards = () => {
         {birdsData.map((bird) => (
           <div key={bird.id} className="flex flex-col items-center">
             {/* بطاقة المحتوى */}
-            <div className="card bg-white shadow-lg rounded-lg overflow-hidden w-80 transition hover:shadow-xl">
+            <div className="card bg-white shadow-lg rounded-lg overflow-hidden w-100 mr-19 transition hover:shadow-xl h-120">
               <img
                 src={bird.image || "/images/default.jpg"} // صورة افتراضية إذا لم تكن الصورة موجودة
                 alt={bird.name || "طائر غير معروف"}
-                className="w-full h-48 object-contain bg-gray-100"
+                className="w-full h-80 object-contain bg-gray-100"
               />
               <div className="p-6 text-center">
                 <h2 className="text-xl font-semibold">
