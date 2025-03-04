@@ -1,13 +1,13 @@
 import './App.css'
-import NameSwitcher from './components/cards/card';
+import Navbar from './components/navbar/nav'
 
 function App() {
   
 
   return (
     <>
-      <NameSwitcher />
-      <h1>helllllllooooo  </h1>
+      <Navbar />
+      
     </>
   )
 }

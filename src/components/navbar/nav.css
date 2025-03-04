@@ -1,0 +1,6 @@
+.nav{
+            width: clamp(300px, 80%, 1200px);
+            margin: auto;
+            /* توسيط العنصر */
+        
+}
