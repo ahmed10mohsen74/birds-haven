@@ -144,7 +144,7 @@ const Cards = () => {
         {birdsData.map((bird) => (
           <div key={bird.id} className="flex flex-col items-center">
             {/* بطاقة المحتوى */}
-            <div className="card bg-white shadow-lg rounded-lg overflow-hidden w-100 mr-19 transition hover:shadow-xl h-120">
+            <div className="card bg-white shadow-lg rounded-lg overflow-hidden w-100 transition hover:shadow-xl h-120">
               <img
                 src={bird.image || "/images/default.jpg"} // صورة افتراضية إذا لم تكن الصورة موجودة
                 alt={bird.name || "طائر غير معروف"}

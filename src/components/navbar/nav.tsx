@@ -18,7 +18,7 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
                 onClick={() => setActivePage(item)} // تحديث الصفحة عند النقر
                 className={`cursor-pointer capitalize ${
                   activePage === item
-                    ? "text-yellow-400 font-bold"
+                    ? "text-yellow-400 font-bold duration-300"
                     : "text-white"
                 }`}
               >
