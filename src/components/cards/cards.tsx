@@ -7,7 +7,7 @@ const Cards = () => {
       id: 1,
       name: "Sparrow",
       info: "Small and fast bird found worldwide.",
-      image: { image1 },
+      image: image1,
       phone: "201279734467",
     },
     {
