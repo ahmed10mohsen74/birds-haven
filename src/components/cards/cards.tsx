@@ -1,25 +1,27 @@
-import './cards.css'
-import image1 from '../../assets/image/pigon-3.jpg'
+import "./cards.css";
+import image1 from "../../assets/image/pigon-3.jpg";
+import image2 from "../../assets/image/pigon-4.jpg";
 
 const Cards = () => {
   const birdsData = [
     {
       id: 1,
-      name: "Sparrow",
-      info: "Small and fast bird found worldwide.",
+      name: "قطقاطي",
+      info: "دكر شاب للنش || المكان شارع فاروق",
       image: image1,
       phone: "201279734467",
     },
     {
       id: 2,
-      name: "Parrot",
+      name: "صوافه",
       info: "", // لا توجد معلومات لهذا العنصر
-      image: "../../assets/image/pigon-3.jpg",
+      image: image2,
       phone: "",
     },
     {
       id: 3,
-      name: "Eagle",
+      name: "صوافه",
+      image: image2,
       // لم يتم إدخال أي بيانات في هذا العنصر
     },
   ];
