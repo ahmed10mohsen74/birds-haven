@@ -162,7 +162,7 @@ const Cards = () => {
             {/* زر واتساب مع رقم ورسالة مخصصة */}
             <a
               href={`https://wa.me/${
-                bird.phone || "201000000000"
+                bird.phone || "201279734467"
               }?text=مرحبا، أريد الاستفسار عن ${bird.name || "هذا العنصر"}`}
               target="_blank"
               rel="noopener noreferrer"

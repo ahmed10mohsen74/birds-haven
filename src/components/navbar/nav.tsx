@@ -10,11 +10,11 @@ const Navbar: React.FC<NavbarProps> = ({ activePage, setActivePage }) => {
     <div className="bg-gray-800">
      
         <nav className=" nav flex justify-between p-4  text-white">
-          <div className="text-2xl font-bold">Logo</div>
+          <div className="text-2xl font-bold">Birds</div>
           <ul className="flex space-x-4">
             {["home", "about", "services", "pages", "projects"].map((item) => (
               <li
-                key={item}
+               
                 onClick={() => setActivePage(item)} // تحديث الصفحة عند النقر
                 className={`cursor-pointer capitalize ${
                   activePage === item
